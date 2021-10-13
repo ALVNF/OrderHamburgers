@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburgesas Paquito</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="index.js"></script>
+
+    <script src="components/hamItem.js"></script>
+    <script src="components/counter.js"></script>
+    
+</head>
+
+<body>
+    <div class="div4blur" id="div4blur">
+        <header class ="newOrderHeader">
+            <img src="images/logo2.png" width="88" height="72" id="logo"/> 
+            <label id="newOrderLbl">Nuevo Pedido</label>
+        </header>
+        
+        <form autocomplete="on" action ="#" onsubmit="valueCount();return false" >
+
+            <div  class="grid-container" >
+                <div class="grid-item1">
+                    <div id="gridItem1Div">
+                        <label for="fname">Nombre</label><br>
+                        <input type="text" id="fname" name="fname" required><br>
+                    </div>
+                    
+                    <div  id="gridItem1Div">
+                        <label for="sname">Apellidos</label><br>
+                        <input type="text" id="sname" name="sname" required><br>    
+                    </div>
+                    
+                    <div  id="gridItem1Div">
+                        <label for="streat">Calle</label><br>
+                        <input type="text" id="streat" name="streat" required><br>    
+                    </div>
+
+                    <div  id="gridItem1Div">
+                        <label for="tlp">Telefono</label><br>
+                        <input type="text" id="tlp" name="tlp" required><br>    
+                    </div>
+
+                    <div  id="gridItem1Div">
+                        <label for="mail">Correo Electrónico</label><br>
+                        <input type="email" id="mail" name="mail" required><br><br>    
+                    </div>
+            
+                </div>
+
+
+                <div class="grid-item2">
+                    <div id="lblOurHams">
+                        <label>Nuestras Hamburgesas</label>
+                    </div>
+                    <ham-item avatar="images/hamS.jpg" id="hamItemS">
+                        <div slot ="name">Hamburgesa Simple</div>
+                        <div slot="ingridients">Ingredientes: (Carne de Ternera, Pan de Semola)</div>
+                    </ham-item>
+
+                    <ham-item avatar="images/hamB.jpg" id="hamItemB">
+                        <div slot ="name">Hamburgesa con Bacon</div>
+                        <div slot="ingridients">Ingredientes: (Carne de Ternera, Tiras de Bacon, Lechuga, 
+                            Tomate, Pan de Semola)</div>
+                    </ham-item>
+
+                    <ham-item avatar="images/hamQ.jpg" id="hamItemQ">
+                        <div slot ="name">Hamburgesa con Queso</div>
+                        <div slot="ingridients">Ingredientes: (Carne de Ternera, Queso Chedar, Lechuga, 
+                            Tomate, Pan de Semola)</div>
+                    </ham-item>
+
+                    <ham-item avatar="images/hamBQ.jpg" id="hamItemBQ">
+                        <div slot ="name">Hamburgesa con Queso y Bacon</div>
+                        <div slot="ingridients">Ingredientes: (Carne de Ternera, Queso Chedar, 
+                            Tiras de Bacon, Lechuga, Tomate, Pan de Semola)</div>
+                    </ham-item>
+
+
+                </div>
+            </div>
+
+            <div class = "checkboxList">
+                <input type="checkbox" id="older18" name="older18" value="MayorEdad" required>
+                <label for="older18"> Soy mayor de 18 años</label><br>
+        
+                <input type="checkbox" id="info" name="info" value="RecibirInfo" checked>
+                <label for="info"> Deseo recibir información a mi correo electrónico</label><br>
+        
+                <input type="checkbox" id="termsCond" name="termsCond" value="termsCond" required>
+                <label for="termsCond"> Acepto los Términos y Condiciones de uso</label><br><br>
+        
+            </div>
+
+            <div class="buttonsDiv">
+                <input type="submit" value="Pedir" id="btnP" name="submitbtn">
+                <input type="reset" onclick="resetCount()" id="btnR"> 
+            </div>
+        </form>
+    </div>
+    <div class ="divBackgnd" id="divBackgnd">
+        <div class ="divOrderDn" id="DivOrder">
+            <label id = "lblOrderDn">Pedido realizado correctamente</label>
+            <input type="button" id = "btnOrderDn" value="Aceptar" onclick="hideOrderDone()">
+        </div>
+    </div>
+
+
+
+    
+</body>
+
+</html>

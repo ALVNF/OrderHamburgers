@@ -1,0 +1,201 @@
+body{
+    font-family: 'Varela Round', sans-serif;
+}
+
+.newOrderHeader{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #FFC480;
+
+
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #000000;
+}
+
+#logo{
+    position:absolute;
+    left: 2%;
+    right: 0;
+    top: 0;
+}
+
+#newOrderLbl{
+    position: absolute;
+    left: 45%;
+    right: 0%;
+    top:10px;
+
+    font-size: 33px;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 35% 35%;
+    margin-left: 20%;    
+}
+  
+.grid-item1 {
+    grid-column-start: 1;
+    text-align: left;
+    margin-top: 35%;
+} 
+
+.grid-item1 input[type=text], input[type=email]{
+    margin-top: 10px;
+    width: 50%;
+    height: 20px;
+   
+    border:none;
+    border-bottom: solid;
+    border-width:1px ;
+
+}
+
+#gridItem1Div{
+    margin-bottom: 25px;
+}
+
+.grid-item2 {
+    grid-column-start: 2;
+    display: grid;
+    grid-template-rows: 15% ;
+
+    text-align: left;
+    margin-top: 30%;
+}
+
+#lblOurHams{
+    margin-left: 25%;
+    text-align: center;
+    font-size: 25px;
+}
+
+.checkboxList{
+    position: absolute;
+    left: 40%;
+    top: 78%;
+    
+}
+
+.buttonsDiv{
+    position: absolute;
+    left: 45%;
+    top:90%;
+
+}
+/*Change google's autocomplete text background*/
+input:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset ;
+    -webkit-text-fill-color: black ;
+}
+
+#btnP{
+    background-color: #FFAB49;
+    width: 120px;
+    height: 30px;
+
+    border-width: 1px;
+    border-radius: 10px;
+
+    color: white;
+    font-size: 17px;
+
+    margin-right: 20px;
+    
+
+    cursor: pointer;
+}
+
+#btnR{
+    background-color: #ffff;
+    width: 120px;
+    height: 30px;
+
+    border-width: 1px;
+    border-radius: 10px;
+
+    font-size: 17px;
+
+    cursor: pointer;
+}
+.divBackgnd{
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+}
+
+.divBackgnd.show{
+    display: block;
+}
+
+.divOrderDn{
+    position: absolute;
+    top:25%;
+    left: 30%;
+
+    display: none;
+
+    background-color: white;
+
+    border-style: solid;
+    border-width: 1px;
+
+    width: 40%;
+    height: 30%;
+
+    border-radius: 15px;
+}
+.divOrderDn.show{
+    display: block;
+}
+
+.div4blur.blur{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+
+#lblOrderDn{
+    position: absolute;
+    top:30%;
+    left: 18%;
+
+    width: 100%;
+
+    font-size: 28px;
+}
+
+#btnOrderDn{
+    position: absolute;
+    bottom: 10%;
+    left: 40%;
+
+    background-color: #FFAB49;
+    width: 120px;
+    height: 30px;
+
+    border-width: 1px;
+    border-radius: 10px;
+
+    color: white;
+    font-size: 17px;
+
+    margin-right: 20px;
+    
+
+    cursor: pointer;
+}
