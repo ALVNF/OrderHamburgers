@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Hamburgesería</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="../../components/hamIndex.js"></script>
+</head>
+<body>
+
+
+    <header class ="navHeader">
+        <img src="../../images/logo2.png" width="88" height="72" id="logo"/> 
+        <label id="titleLbl">La Hamburgesería</label>
+        <label id="subTitleLbl">Somos Especialistas</label>
+
+        <nav id = "navigation">
+            <a href=".index.html" id="aInicio">Inicio</a>
+            <a href="../OrderPage/newOrder.html" id="aPedido">Pedido</a>
+        </nav>
+    </header>
+
+
+    <section>
+        <div class="hamTable">
+            <div class="hamTableItem">
+                <ham-index avatar="../../images/hamS.jpg" id="hamItemS">
+                    <div slot ="name">Hamburgesa Simple</div>
+                    <div slot="ingridients">Ingredientes: (Carne de Ternera, Pan de Semola)</div>
+                </ham-index>
+            </div>
+
+            <div class="hamTableItem">
+                <ham-index avatar="../../images/hamB.jpg" id="hamItemB">
+                    <div slot ="name">Hamburgesa con Bacon</div>
+                    <div slot="ingridients">Ingredientes: (Carne de Ternera, Tiras de Bacon, Lechuga, 
+                        Tomate, Pan de Semola)</div>
+                </ham-index>
+            </div>
+
+            <div class="hamTableItem">
+                <ham-index avatar="../../images/hamQ.jpg" id="hamItemQ">
+                    <div slot ="name">Hamburgesa con Queso</div>
+                    <div slot="ingridients">Ingredientes: (Carne de Ternera, Queso Chedar, Lechuga, 
+                        Tomate, Pan de Semola)</div>
+                </ham-index>
+            </div>
+
+            <div class="hamTableItem">
+                <ham-index avatar="../../images/hamBQ.jpg" id="hamItemBQ">
+                    <div slot ="name">Hamburgesa con Queso y Bacon</div>
+                    <div slot="ingridients">Ingredientes: (Carne de Ternera, Queso Chedar, 
+                        Tiras de Bacon, Lechuga, Tomate, Pan de Semola)</div>
+                </ham-index>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class= "contactFooter">
+        <label>La Hamburgesería</label><br>
+        <label>C/NuestraCalle Nº12</label>
+    </footer>
+
+
+</body>
+</html>

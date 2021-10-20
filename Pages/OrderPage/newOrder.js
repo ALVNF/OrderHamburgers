@@ -40,7 +40,7 @@ function valueCount(){
 
 
     var xhr = new XMLHttpRequest();
-    xhr.open("POST","emailSender.php");
+    xhr.open("POST","../../emailSender.php");
     xhr.setRequestHeader("Content-Type","application/json");
     xhr.onreadystatechange = function() { //Call a function when the state changes.
         if(xhr.readyState == 4 && xhr.status == 200) { // complete and no errors
