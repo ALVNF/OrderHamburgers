@@ -5,35 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Hamburgesería</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <script src="./index.js"></script>
     <script src="../../components/hamIndex.js"></script>
+
 </head>
 <body>
-
-
-    <header class ="navHeader">
-        <img src="../../images/logo2.png" width="88" height="72" id="logo"/> 
+    <header class ="navHeader" id="navHeader" onmouseleave="closeNav()">
+        <img src="../../images/Otros/logo2.png" width="88" height="72" id="logo"/> 
         <label id="titleLbl">La Hamburgesería</label>
         <label id="subTitleLbl">Somos Especialistas</label>
 
+        <div id="openNav" onmouseenter="openNav()">
+            <label>&#9660</label>
+        </div>
+
         <nav id = "navigation">
-            <a href=".index.html" id="aInicio">Inicio</a>
+            <a href="./index.html" id="aInicio">Inicio</a>
             <a href="../OrderPage/newOrder.html" id="aPedido">Pedido</a>
+            <a href="../Carta/carta.html" id="aCarta">Carta</a>
         </nav>
     </header>
 
-
     <section>
+        <label id="specialsLbl">Nuestras Especialidades</label>
+
         <div class="hamTable">
             <div class="hamTableItem">
-                <ham-index avatar="../../images/hamS.jpg" id="hamItemS">
+                <ham-index avatar="../../images/Hamburgesas/hamS.jpg" id="hamItemS">
                     <div slot ="name">Hamburgesa Simple</div>
                     <div slot="ingridients">Ingredientes: (Carne de Ternera, Pan de Semola)</div>
                 </ham-index>
             </div>
 
             <div class="hamTableItem">
-                <ham-index avatar="../../images/hamB.jpg" id="hamItemB">
+                <ham-index avatar="../../images/Hamburgesas/hamB.jpg" id="hamItemB">
                     <div slot ="name">Hamburgesa con Bacon</div>
                     <div slot="ingridients">Ingredientes: (Carne de Ternera, Tiras de Bacon, Lechuga, 
                         Tomate, Pan de Semola)</div>
@@ -41,7 +49,7 @@
             </div>
 
             <div class="hamTableItem">
-                <ham-index avatar="../../images/hamQ.jpg" id="hamItemQ">
+                <ham-index avatar="../../images/Hamburgesas/hamQ.jpg" id="hamItemQ">
                     <div slot ="name">Hamburgesa con Queso</div>
                     <div slot="ingridients">Ingredientes: (Carne de Ternera, Queso Chedar, Lechuga, 
                         Tomate, Pan de Semola)</div>
@@ -49,13 +57,12 @@
             </div>
 
             <div class="hamTableItem">
-                <ham-index avatar="../../images/hamBQ.jpg" id="hamItemBQ">
+                <ham-index avatar="../../images/Hamburgesas/hamBQ.jpg" id="hamItemBQ">
                     <div slot ="name">Hamburgesa con Queso y Bacon</div>
                     <div slot="ingridients">Ingredientes: (Carne de Ternera, Queso Chedar, 
                         Tiras de Bacon, Lechuga, Tomate, Pan de Semola)</div>
                 </ham-index>
             </div>
-
         </div>
     </section>
 

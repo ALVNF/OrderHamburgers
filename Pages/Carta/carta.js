@@ -1,4 +1,3 @@
-
 function openNav(){
     document.getElementById('navHeader').style.height = '90px';
 

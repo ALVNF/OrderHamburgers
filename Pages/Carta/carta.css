@@ -83,31 +83,132 @@ body{
     color: #000000;
 }
 
-#specialsLbl{
+
+.menuTable {
     position: absolute;
-    top: 15%;
-    left: 38%;
+
+    width: 100%;
+    height: 110%;
+
+    top: 2%;
+    right: 0%;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+  
+    justify-content: center;
+
+}
+  
+.menuItem1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+
+    display: grid;
+    grid-template-rows: 25% 25% 25% ;
+
+    height: 500px;
+
+    text-align: left;
+    margin-top: 13%;
+
+    padding-left: 3%;
+
+
+
+} 
+
+#entrantesLbl{
+    position: absolute;
+    top: 6%;
+    left: 15%;
 
     font-size: 35px;
 }
 
-.hamTable{
-    position: absolute;
-    width: 100%;
-    top: 30%;
-    left: 0%;
+.menuItem2 {
 
+    grid-column-start: 2;
+    grid-row-start: 1;
+    
     display: grid;
-    grid-template-columns: 40% 40%;
-    grid-template-rows: 60% 60%;
+    grid-template-rows: 25% 25% 25% ;
 
-    height: 450px;
+
+    height: 500px;
+
+    text-align: left;
+    margin-top: 13%;
+
+    padding-left: 3%;
 
 }
 
-.hamTableItem{
-    margin-left: 35%;
+#specialsLbl{
+    position: absolute;
+    top: 6%;
+    left: 63%;
+
+    font-size: 35px;
 }
+
+.menuItem3 {
+
+    grid-column-start: 1;
+    grid-row-start: 2;
+    
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50% ;
+
+
+    height: 230px;
+
+    text-align: left;
+    margin-top: 23%;
+
+    padding-left: 3%;
+
+
+}
+
+#drinksLbl{
+    position: absolute;
+    top: 65%;
+    left: 15%;
+
+    font-size: 35px;
+}
+
+.menuItem4 {
+
+    grid-column-start: 2;
+    grid-row-start: 2;
+    
+    display: grid;
+    grid-template-columns: 30% 30%;
+    grid-template-rows: 50% 50% ;
+
+    width: 90%;
+    height: 230px;
+
+    text-align: left;
+    margin-top: 23%;
+
+    padding-left: 3%;
+
+
+}
+
+#dessertsLbl{
+    position: absolute;
+    top: 65%;
+    left: 63%;
+
+    font-size: 35px;
+}
+
 
 .contactFooter{
     position: absolute;
@@ -123,7 +224,3 @@ body{
 
     align-content: flex-start;
 }
-
-
-
-

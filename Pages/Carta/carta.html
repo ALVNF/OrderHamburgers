@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta</title>
+
+    <link rel="stylesheet" href="./carta.css">
+    <script src="./carta.js"></script>
+    <script src="../../components/hamIndex.js"></script>
+    
+</head>
+<body>
+
+    <header class ="navHeader" id="navHeader" onmouseleave="closeNav()">
+        <img src="../../images/Otros/logo2.png" width="88" height="72" id="logo"/> 
+        <label id="titleLbl">La Hamburgesería</label>
+        <label id="subTitleLbl">Somos Especialistas</label>
+
+        <div id="openNav" onmouseenter="openNav()">
+            <label>&#9660</label>
+        </div>
+
+        <nav id = "navigation">
+            <a href="../index/index.html" id="aInicio">Inicio</a>
+            <a href="../OrderPage/newOrder.html" id="aPedido">Pedido</a>
+            <a href="./carta.html" id="aCarta">Carta</a>
+        </nav>
+    </header>
+
+    <section>
+
+        <div class="menuTable">
+            <div class="menuItem1">
+                <label id="entrantesLbl">Entrantes</label>
+                <ham-index avatar="../../images/Entrantes/Aros.jpg" id="arosItem">
+                    <div slot ="name">Aros de Cebolla</div>
+                    <div slot="ingridients">Ingredientes: (Aros de Cebolla rebozados)</div>
+                </ham-index>
+
+                <ham-index avatar="../../images/Entrantes/DeliciasPollo.jpg" id="DelItem">
+                    <div slot ="name">Delicias de Pollo</div>
+                    <div slot="ingridients">Ingredientes: (Tiras de Pechuga de Pollo Campero)</div>
+                </ham-index>
+
+                <ham-index avatar="../../images/Entrantes/JalapenosRellenos.jpg" id="JalaItem">
+                    <div slot ="name">Jalapeños Rellenos</div>
+                    <div slot="ingridients">Ingredientes: (Jalapeños, Queso Cheddar)</div>
+                </ham-index>
+
+                <ham-index avatar="../../images/Entrantes/Nachos.jpg" id="NachItem">
+                    <div slot ="name">Nachos con Guacamole</div>
+                    <div slot="ingridients">Ingredientes: (Nachos, Guacamole, Pimiento Rojo y Verde)</div>
+                </ham-index>
+            </div>
+
+            <div class="menuItem2">
+                <label id="specialsLbl">Hamburgesas</label>
+
+                <ham-index avatar="../../images/Hamburgesas/hamS.jpg" id="hamItemS">
+                    <div slot ="name">Hamburgesa Simple</div>
+                    <div slot="ingridients">Ingredientes: (Carne de Ternera, Pan de Semola)</div>
+                </ham-index>
+
+                <ham-index avatar="../../images/Hamburgesas/hamB.jpg" id="hamItemB">
+                    <div slot ="name">Hamburgesa con Bacon</div>
+                    <div slot="ingridients">Ingredientes: (Carne de Ternera, Tiras de Bacon, Lechuga, 
+                        Tomate, Pan de Semola)</div>
+                </ham-index>
+
+                <ham-index avatar="../../images/Hamburgesas/hamQ.jpg" id="hamItemQ">
+                    <div slot ="name">Hamburgesa con Queso</div>
+                    <div slot="ingridients">Ingredientes: (Carne de Ternera, Queso Chedar, Lechuga, 
+                        Tomate, Pan de Semola)</div>
+                </ham-index>
+
+                <ham-index avatar="../../images/Hamburgesas/hamBQ.jpg" id="hamItemBQ">
+                    <div slot ="name">Hamburgesa con Queso y Bacon</div>
+                    <div slot="ingridients">Ingredientes: (Carne de Ternera, Queso Chedar, 
+                        Tiras de Bacon, Lechuga, Tomate, Pan de Semola)</div>
+                </ham-index>
+            </div>
+
+            <div class="menuItem3">
+                <label id="drinksLbl">Bebidas</label>
+
+                <ham-index avatar="../../images/Bebidas/CocaCola.jpg" id="CocaItem">
+                    <div slot ="name">Coca-Cola</div>
+                </ham-index>
+
+                <ham-index avatar="../../images/Bebidas/FantaLimon.jpg" id="FantLItem">
+                    <div slot ="name">Fanta Limón</div>
+                </ham-index>
+
+                <ham-index avatar="../../images/Bebidas/Aquarius.jpg" id="AquaItem">
+                    <div slot ="name">Aquarius</div>
+                </ham-index>
+
+                <ham-index avatar="../../images/Bebidas/FantaNaranja.jpg" id="FantNItem">
+                    <div slot ="name">Fanta Naranja</div>
+                </ham-index>
+            </div>
+
+            <div class="menuItem4">
+                <label id="dessertsLbl">Postres</label>
+
+                <ham-index avatar="../../images/Postres/Tiramisu.png" id="tiraItem">
+                    <div slot ="name">Tiramisú</div>
+                </ham-index>
+
+                <ham-index avatar="../../images/Postres/TartaQueso.jpg" id="tartaItem">
+                    <div slot ="name">Tarta de Queso</div>
+                </ham-index>
+
+                <ham-index avatar="../../images/Postres/Flan.jpg" id="flanItem">
+                    <div slot ="name">Flan</div>
+                </ham-index>
+
+                <ham-index avatar="../../images/Postres/BrochetasFrutas.jpg" id="BFCItem">
+                    <div slot ="name">Brochetas de <br>Frutas con Chocolate</div>
+                </ham-index>
+            </div>
+
+            
+        </div>
+
+    </section>
+
+    <footer class= "contactFooter">
+        <label>La Hamburgesería</label><br>
+        <label>C/NuestraCalle Nº12</label>
+    </footer>
+</body>
+</html>

@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="newOrderStyle.css">
 
-    <script src="newOrder.js"></script>
+    <script src="./newOrder.js"></script>
 
     <script src="../../components/hamItem.js"></script>
     <script src="../../components/counter.js"></script>
@@ -20,19 +20,27 @@
 
     <div class="div4blur" id="div4blur">
 
-        <header class ="navHeader">
-            <img src="../../images/logo2.png" width="88" height="72" id="logo"/> 
+        <header class ="navHeader" id = "navHeader" onmouseleave="closeNav()">
+            <img src="../../images/Otros/logo2.png" width="88" height="72" id="logo"/> 
             <label id="newOrderLbl">Nuevo Pedido</label>
+
+            <div id="openNav" onmouseenter="openNav()">
+                <label>&#9660</label>
+            </div>
+
             <nav id = "navigation">
                 <a href="../index/index.html" id="aInicio">Inicio</a>
                 <a href="./newOrder.html" id="aPedido">Pedido</a>
+                <a href="../Carta/carta.html" id="aCarta">Carta</a>
             </nav>
         </header>
 
 
         
         <form autocomplete="on" action ="#" onsubmit="valueCount();return false" >
+
             <div  class="grid-container" >
+                
                 <div class="grid-item1">
                     <div id="gridItem1Div">
                         <label for="fname">Nombre</label><br>
@@ -62,32 +70,106 @@
                 </div>
 
 
-                <div class="grid-item2">
-                    <div id="lblOurHams">
-                        <label>Nuestras Hamburgesas</label>
+                <div class="grid-item2" >
+
+                    <div class="item1">
+                        <div id="lblOurHams">
+                            <label id="entrantesLbl">Entrantes</label>
+                        </div>
+                        
+                        <ham-item avatar="../../images/Entrantes/Aros.jpg" id="arosItem">
+                            <div slot ="name">Aros de Cebolla</div>
+                            <div slot="ingridients">Ingredientes: (Aros de Cebolla rebozados)</div>
+                        </ham-item>
+        
+                        <ham-item avatar="../../images/Entrantes/DeliciasPollo.jpg" id="DelItem">
+                            <div slot ="name">Delicias de Pollo</div>
+                            <div slot="ingridients">Ingredientes: (Tiras de Pechuga de Pollo Campero)</div>
+                        </ham-item>
+        
+                        <ham-item avatar="../../images/Entrantes/JalapenosRellenos.jpg" id="JalaItem">
+                            <div slot ="name">Jalapeños Rellenos</div>
+                            <div slot="ingridients">Ingredientes: (Jalapeños, Queso Cheddar)</div>
+                        </ham-item>
+        
+                        <ham-item avatar="../../images/Entrantes/Nachos.jpg" id="NachItem">
+                            <div slot ="name">Nachos con Guacamole</div>
+                            <div slot="ingridients">Ingredientes: (Nachos, Guacamole, Pimiento Rojo y Verde)</div>
+                        </ham-item>
                     </div>
-                    <ham-item avatar="../../images/hamS.jpg" id="hamItemS">
-                        <div slot ="name">Hamburgesa Simple</div>
-                        <div slot="ingridients">Ingredientes: (Carne de Ternera, Pan de Semola)</div>
-                    </ham-item>
 
-                    <ham-item avatar="../../images/hamB.jpg" id="hamItemB">
-                        <div slot ="name">Hamburgesa con Bacon</div>
-                        <div slot="ingridients">Ingredientes: (Carne de Ternera, Tiras de Bacon, Lechuga, 
-                            Tomate, Pan de Semola)</div>
-                    </ham-item>
+                    <div class="item2">
+                        
+                        <div id="lblOurHams">
+                            <label>Hamburgesas</label>
+                        </div>
+                        <ham-item avatar="../../images/Hamburgesas/hamS.jpg" id="hamItemS">
+                            <div slot ="name">Hamburgesa Simple</div>
+                            <div slot="ingridients">Ingredientes: (Carne de Ternera, Pan de Semola)</div>
+                        </ham-item>
 
-                    <ham-item avatar="../../images/hamQ.jpg" id="hamItemQ">
-                        <div slot ="name">Hamburgesa con Queso</div>
-                        <div slot="ingridients">Ingredientes: (Carne de Ternera, Queso Chedar, Lechuga, 
-                            Tomate, Pan de Semola)</div>
-                    </ham-item>
+                        <ham-item avatar="../../images/Hamburgesas/hamB.jpg" id="hamItemB">
+                            <div slot ="name">Hamburgesa con Bacon</div>
+                            <div slot="ingridients">Ingredientes: (Carne de Ternera, Tiras de Bacon, Lechuga, 
+                                Tomate, Pan de Semola)</div>
+                        </ham-item>
 
-                    <ham-item avatar="../../images/hamBQ.jpg" id="hamItemBQ">
-                        <div slot ="name">Hamburgesa con Queso y Bacon</div>
-                        <div slot="ingridients">Ingredientes: (Carne de Ternera, Queso Chedar, 
-                            Tiras de Bacon, Lechuga, Tomate, Pan de Semola)</div>
-                    </ham-item>
+                        <ham-item avatar="../../images/Hamburgesas/hamQ.jpg" id="hamItemQ">
+                            <div slot ="name">Hamburgesa con Queso</div>
+                            <div slot="ingridients">Ingredientes: (Carne de Ternera, Queso Chedar, Lechuga, 
+                                Tomate, Pan de Semola)</div>
+                        </ham-item>
+
+                        <ham-item avatar="../../images/Hamburgesas/hamBQ.jpg" id="hamItemBQ">
+                            <div slot ="name">Hamburgesa con Queso y Bacon</div>
+                            <div slot="ingridients">Ingredientes: (Carne de Ternera, Queso Chedar, 
+                                Tiras de Bacon, Lechuga, Tomate, Pan de Semola)</div>
+                        </ham-item>
+                    </div>
+
+                    <div class="item3">
+                        <div id="lblOurHams">
+                            <label>Bebidas</label>
+                        </div>
+        
+                        <ham-item avatar="../../images/Bebidas/CocaCola.jpg" id="CocaItem">
+                            <div slot ="name">Coca-Cola</div>
+                        </ham-item>
+        
+                        <ham-item avatar="../../images/Bebidas/FantaLimon.jpg" id="FantLItem">
+                            <div slot ="name">Fanta Limón</div>
+                        </ham-item>
+        
+                        <ham-item avatar="../../images/Bebidas/Aquarius.jpg" id="AquaItem">
+                            <div slot ="name">Aquarius</div>
+                        </ham-item>
+        
+                        <ham-item avatar="../../images/Bebidas/FantaNaranja.jpg" id="FantNItem">
+                            <div slot ="name">Fanta Naranja</div>
+                        </ham-item>
+                    </div>
+        
+                    <div class="item4">
+                        <div id="lblOurHams">
+                            <label>Postres</label>
+                        </div>
+        
+                        <ham-item avatar="../../images/Postres/Tiramisu.png" id="tiraItem">
+                            <div slot ="name">Tiramisú</div>
+                        </ham-item>
+        
+                        <ham-item avatar="../../images/Postres/TartaQueso.jpg" id="tartaItem">
+                            <div slot ="name">Tarta de Queso</div>
+                        </ham-item>
+        
+                        <ham-item avatar="../../images/Postres/Flan.jpg" id="flanItem">
+                            <div slot ="name">Flan</div>
+                        </ham-item>
+        
+                        <ham-item avatar="../../images/Postres/BrochetasFrutas.jpg" id="BFCItem">
+                            <div slot ="name">Brochetas de Frutas con Chocolate</div>
+                        </ham-item>
+                    </div>
 
                 </div>
             </div>

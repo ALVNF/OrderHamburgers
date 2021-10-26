@@ -5,7 +5,7 @@ itemTemplate.innerHTML = `
         .burgerItem{
             position: absolute;
 
-            width: 35%;
+            width: 70%;
             display:flex;
             justify-content: flex-start;
         }
@@ -15,7 +15,7 @@ itemTemplate.innerHTML = `
 
         .burgerLbl{
             position:absolute;
-            left: 15%;
+            left: 12%;
             top: 10%;
             
             font-family: 'Varela Round', sans-serif;
